@@ -33,11 +33,11 @@ const addTodo = (title: string) => {
 }
 console.log(todos);
     return (
-        <div className="flex items-center justify-center flex-col W-full">
-            <h1 className="text-4xl p-10"> vous avez {todos.length} tache a faire</h1>
+        <div className="flex items-center justify-center flex-col W-full dark:bg-slate-800">
+            <h1 className="text-4xl p-10 text-slate-500 dark:text-slate-400 mt-2 text-sm"> vous avez {todos.length} tache a faire</h1>
             <ul className="flex flex-col w-full text-center items-center justify-center">
                 {todos.map(todo => {
-                    return <li className="border-4 w-4/5 p-5" key={todo.id}>{todo.title}</li>
+                    return <li className="border-4 w-4/5 p-5 text-slate-500 dark:text-slate-400 mt-2 text-sm" key={todo.id}>{todo.title}</li>
                 })}
             </ul>
             <AddForm addNewTodo  ={addTodo}/>

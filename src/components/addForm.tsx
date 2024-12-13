@@ -17,8 +17,8 @@ const AddForm: React.FC<AddFormProps> = ({ addNewTodo }) => {
     }
 
     return (
-        <div className="flex items-center justify-center flex-col W-full">
-            <h1 className="text-4xl p-10">Ajouter une tache</h1>
+        <div className="flex items-center justify-center flex-col W-full dark:bg-slate-800">
+            <h1 className="text-4xl p-10 text-slate-500 dark:text-slate-400 mt-2 text-sm">Ajouter une tache</h1>
             <form onSubmit={handleSubmit} className="flex flex-col w-full text-center items-center justify-center">
                 <input type="text" className="border-4 w-4/5 p-5" value={title} onChange={(e) => setTitle(e.target.value)} />
                 <button type="submit" className="border-4 w-4/5 p-5 bg-blue-500 text-white">Ajouter</button>
